@@ -53,3 +53,77 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .images img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .images a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        hr {
+            border: 1px solid white;
+            margin: 50px 0;
+        }
+        .footer {
+            text-align: right;
+            padding: 20px;
+            font-style: italic;
+            font-family: "Courier New", Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the B@sics!</h1>
+    </div>
+    
+    <div class="images">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Apple">
+            <a href="https://www.apple.com/th/" target="_blank">Visit Apple</a>
+        </div>
+        <div>
+            <img src="data:image/png;base64,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" alt="DJI">
+            <a href="https://www.dji.com/global" target="_blank">Visit DJI</a>
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="footer">
+        © JET 2008
+    </div>
+</body>
+</html>
