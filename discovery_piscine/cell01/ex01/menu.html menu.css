@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNCF Sandwich Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Sandwich Menu</a>
+                <div class="dropdown-content">
+                    <a href="#">Ham & Cheese</a>
+                    <a href="#">Turkey & Swiss</a>
+                    <a href="#">Vegetarian</a>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #575757;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
